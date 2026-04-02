@@ -9,6 +9,8 @@
 ![JS](https://img.shields.io/badge/JavaScript-Logic-F7DF1E?logo=javascript&logoColor=black)
 ![Tailwind](https://img.shields.io/badge/Tailwind_CSS-Design-06B6D4?logo=tailwind-css&logoColor=white)
 
+[ENLACE AL PORTAFOLIO](https://alejandromaturana.github.io/devManuGL/)
+
 </div>
 
 ---
@@ -35,29 +37,6 @@ La arquitectura de este portafolio utiliza herramientas de vanguardia para asegu
 
 ---
 
-## 🚀 DEMO
-
-[Portafolio](https://img.shields.io/badge/HTML5-Markup-E34F26?logo=html5&logoColor=white)
-
-### Prerrequisitos
-
-página web estática, solo necesitas un navegador web moderno (Chrome, Firefox, Edge, Safari).
-
-### Pasos
-
-1. **Clona el repositorio**:
-   ```bash
-   git clone https://github.com/AlejandroMaturana/Portafolio.git
-   ```
-2. **Navega al directorio**:
-   ```bash
-   cd Portafolio
-   ```
-3. **Lanza la Misión**:
-   Simplemente abre `Index.html` en tu navegador.
-
----
-
 ## 📂 Estructura del Proyecto
 
 ```text
@@ -80,7 +59,7 @@ Portafolio/
 
 **Alejandro Maturana (ManuGL)** – _Industrial Engineer & Full Stack Developer_
 
-- **GitHub**: [neofito331 / AlejandroMaturana](https://github.com/AlejandroMaturana)
+- **GitHub**: [Perfil Desarrollador](https://github.com/AlejandroMaturana)
 - **LinkedIn**: [Perfil Profesional](https://www.linkedin.com/in/manuel-a-gonzalez-lozano-bb23a5242)
 - **Status**: Disponible - Santiago / Biobío / Remoto 🇨🇱
 
