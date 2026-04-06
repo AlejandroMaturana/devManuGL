@@ -42,3 +42,65 @@ body {
         opacity: 1;
     }
 }
+
+/* -------------------------------------------------
+   Botón “ENVIAR_MENSAJE” – estilo sobrio pero visible
+   ------------------------------------------------- */
+
+/* 1️⃣ Clase base (ya está en el HTML: .btn-primary-send) */
+.btn-primary-send {
+    /* Dimensiones y tipografía */
+    display            : inline-flex;
+    align-items        : center;
+    justify-content   : center;
+    width              : 100%;
+    padding            : 1rem 0;
+    font-family        : var(--font-label, sans-serif);
+    font-weight        : 600;
+    font-size          : 0.875rem;               /* 14 px */
+    letter-spacing     : 0.2em;
+    text-transform     : uppercase;
+    color              : var(--on-primary-fixed, #fff);
+
+    /* Colores de fondo */
+    background-color   : var(--primary-fixed, #2563eb);   /* azul primario */
+    border              : 2px solid transparent;
+    border-radius       : 0.5rem;                /* 8 px */
+
+    /* Sombra y transición */
+    box-shadow          : 0 2px 4px rgba(0,0,0,.1);
+    transition           : background-color .25s,
+                           border-color .25s,
+                           transform .15s,
+                           box-shadow .25s;
+}
+
+/* 2️⃣ Estado “hover” – destaca el botón */
+.btn-primary-send:hover,
+.btn-primary-send:focus-visible {
+    background-color   : #1e40af;                /* azul más oscuro */
+    border-color       : rgba(255,255,255,.3);   /* borde tenue iluminado */
+    box-shadow          : 0 6px 12px rgba(0,0,0,.15);
+    transform           : scale(0.97);            /* efecto “presionar” */
+}
+
+/* 3️⃣ Estado “active” – cuando el usuario hace click */
+.btn-primary-send:active {
+    background-color   : #1a366e;                /* aún más oscuro */
+    transform           : scale(0.94);
+}
+
+/* 4️⃣ Estado “focus-visible” – accesibilidad */
+.btn-primary-send:focus-visible {
+    outline: 2px solid var(--primary-fixed, #2563eb);
+    outline-offset: 2px;
+}
+
+/* 5️⃣ Clase “flicker” opcional (mantiene la animación que ya tenías) */
+.flicker-animation-on-hover:hover {
+    animation: flicker .8s infinite;
+}
+
+/* -------------------------------------------------
+   Utiliza la clase en el HTML
+   ------------------------------------------------- */
