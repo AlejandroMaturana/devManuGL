@@ -1,4 +1,4 @@
-# 🌌 ManuGL | Mission Control - Portafolio Full Stack
+# Portafolio Full Stack ManuGL
 
 > Mi centro de comando personal como Ingeniero Industrial y Desarrollador Full Stack JavaScript. Un espacio diseñado para proyectar mi visión técnica, mis habilidades analíticas y mis soluciones digitales escalables.
 
