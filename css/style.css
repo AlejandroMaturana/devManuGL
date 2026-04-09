@@ -102,5 +102,84 @@ body {
 }
 
 /* -------------------------------------------------
-   Utiliza la clase en el HTML
+   Botones de Proyectos y Hero - Estilos Mejorados
    ------------------------------------------------- */
+
+/* Botones primarios con borde (CÓDIGO, LIVE_DEMO, VER_PROYECTOS) */
+a[class*="border-2 border-primary"],
+a[class*="border border-primary"] {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efecto hover mejorado para botones */
+a[class*="border-2 border-primary"]:hover,
+a[class*="border border-primary"]:hover {
+    /* Añadir efecto visual más pronunciado */
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(153, 247, 255, 0.2);
+}
+
+/* Efecto activo (cuando se presiona) */
+a[class*="border-2 border-primary"]:active,
+a[class*="border border-primary"]:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(153, 247, 255, 0.1);
+}
+
+/* Estado focus visible para accesibilidad */
+a[class*="border-2 border-primary"]:focus-visible,
+a[class*="border border-primary"]:focus-visible {
+    outline: 2px solid #99f7ff;
+    outline-offset: 2px;
+}
+
+/* -------------------------------------------------
+   Botones DESCARGAR_CV - Estilos Específicos  
+   ------------------------------------------------- */
+
+/* Botones de fondo sólido (DESCARGAR_CV) */
+a[class*="bg-primary-fixed"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(153, 247, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+a[class*="bg-primary-fixed"]:focus-visible {
+    outline: 2px solid #99f7ff;
+    outline-offset: 2px;
+}
+
+/* -------------------------------------------------
+   Responsive: Mejoras para dispositivos pequeños
+   ------------------------------------------------- */
+
+@media (max-width: 640px) {
+    /* Aumentar área táctil de botones */
+    a[class*="border-2 border-primary"],
+    a[class*="border border-primary"],
+    a[class*="bg-primary-fixed"] {
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+    /* Asegurar botones ocupen bien el espacio en móvil */
+    a[class*="border-2 border-primary"],
+    a[class*="bg-primary-fixed"] {
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+    }
+}
+
+/* -------------------------------------------------
+   Transiciones suaves para mejor UX
+   ------------------------------------------------- */
+
+@media (prefers-reduced-motion: no-preference) {
+    a[class*="border-2 border-primary"],
+    a[class*="border border-primary"],
+    a[class*="bg-primary-fixed"] {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
